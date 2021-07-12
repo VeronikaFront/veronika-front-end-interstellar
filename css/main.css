@@ -1,0 +1,220 @@
+#homepage {
+    position: relative;
+    width: 100%;
+
+    background: #FFFFFF;
+}
+
+#features {
+    position: relative;
+    width: 100%;
+    height: 635px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    background: #F5FCFD;
+}
+
+.block-1 {
+    position: absolute;
+    margin: 165px 0px 180px -800px;
+    width: 362px;
+    height: 290px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
+    border-radius: 5px;
+}
+
+.analysis-img {
+    padding: 40px 146px 15px 146px;
+    width: 70px;
+    height: 70px;   
+}
+
+.analysis-title {
+    padding: 10px 147px 15px 146px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;   
+}
+
+.analysis-text {
+    padding: 5px 15px 47px 14px;
+    width: 333px;
+    height: 60px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.block-2 {
+    position: absolute;
+    width: 362px;
+    height: 290px;
+    margin: 215px 0px 130px 0px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
+    border-radius: 5px;
+}
+
+.clean-design-img {
+    padding: 40px 146px 15px 146px;
+    width: 70px;
+    height: 70px;
+}
+
+.clean-design-title {
+    padding: 10px 115px 15px 135px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;  
+}
+
+.clean-design-text {
+    width: 333px;
+    height: 60px;
+    padding: 5px 15px 47px 14px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.block-3 {
+    position: absolute;
+    width: 362px;
+    height: 290px;
+    margin: 165px 0px 180px 800px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
+    border-radius: 5px;
+}
+
+.messaging-img {
+    padding: 40px 146px 15px 146px;
+    width: 70px;
+    height: 70px;
+}
+
+.messaging-title {
+    padding: 10px 147px 15px 146px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000; 
+}
+
+.messaging-text {
+    padding: 5px 15px 47px 14px;
+    width: 333px;
+    height: 60px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #000000;
+}
+
+#easy-messaging{
+    position:relative;
+    width: 100%;
+    height: 373px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ 
+ .easy-messaging-back-screen {
+     
+     width: 389.71px;
+     height: 482.98px;
+     margin-left: -620px;
+ 
+ 
+     background: linear-gradient(147.4deg, #0F7BFF 7.27%, #0063DD 93.68%);
+     border-radius: 40px;
+     transform: matrix(0.77, -0.64, -0.64, -0.77, 0, 0);
+ }
+ .easy-messaging-screen {
+     position: absolute;
+     width: 558px;
+     height: 373px;
+     margin: 55px 480px 0px 0px;
+ 
+     border-radius: 20px;
+ }
+
+ .easy-messaging-title{
+     padding: 140px 0px 0px 580px;
+     position: absolute;
+     font-family: Quicksand;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 32px;
+     line-height: 40px;
+ 
+     color: #000000;
+ }
+
+ .easy-messaging-text{
+    width: 476px;
+    height: 96px;
+    margin: 220px 0px 0px 820px;
+    position: absolute;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    
+    
+    color: #000000;
+ }
+
+ .easy-messaging-read-more{
+     width: 83px;
+     height: 24px; 
+     margin: 350px 0px 0px 420px; 
+     position: absolute;   
+     font-family: Quicksand;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 150%;
+
+     color: #0063DD;
+ }
+
+ .easy-messaging-read-more-arrow {
+    position:absolute;
+    width: 67px;
+    height: 0px;
+    margin: 355px 0px 0px 600px;
+ }
