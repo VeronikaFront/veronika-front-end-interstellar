@@ -154,7 +154,7 @@
      
      width: 389.71px;
      height: 482.98px;
-     margin-left: -620px;
+     margin-left: -720px;
  
  
      background: linear-gradient(147.4deg, #0F7BFF 7.27%, #0063DD 93.68%);
@@ -165,13 +165,13 @@
      position: absolute;
      width: 558px;
      height: 373px;
-     margin: 55px 480px 0px 0px;
+     margin: 55px 580px 0px 0px;
  
      border-radius: 20px;
  }
 
  .easy-messaging-title{
-     padding: 140px 0px 0px 580px;
+     padding: 140px 0px 0px 480px;
      position: absolute;
      font-family: Quicksand;
      font-style: normal;
@@ -185,7 +185,7 @@
  .easy-messaging-text{
     width: 476px;
     height: 96px;
-    margin: 220px 0px 0px 820px;
+    margin: 220px 0px 0px 720px;
     position: absolute;
     font-family: Quicksand;
     font-style: normal;
@@ -201,7 +201,7 @@
  .easy-messaging-read-more{
      width: 83px;
      height: 24px; 
-     margin: 350px 0px 0px 420px; 
+     margin: 350px 0px 0px 320px; 
      position: absolute;   
      font-family: Quicksand;
      font-style: normal;
@@ -216,7 +216,7 @@
     position:absolute;
     width: 67px;
     height: 0px;
-    margin: 355px 0px 0px 600px;
+    margin: 355px 0px 0px 500px;
  }
 
  #keep-in-touch{
@@ -232,7 +232,7 @@
      
      width: 389.71px;
      height: 482.98px;
-     margin-left: 860px;
+     margin-left: 760px;
      margin-top: 270px;
  
  
@@ -244,13 +244,13 @@
      position: absolute;
      width: 362px;
      height: 408px;
-     margin: 250px -710px 0px 0px;
+     margin: 250px -610px 0px 0px;
 
      border-radius: 20px;
  }
 
  .keep-in-touch-title{
-     padding: 350px 800px 0px 0px;
+     padding: 350px 900px 0px 0px;
      position: absolute;
      font-family: Quicksand;
      font-style: normal;
@@ -264,7 +264,7 @@
  .keep-in-touch-text{
     width: 476px;
     height: 96px;
-    margin: 425px 540px 0px 0px;
+    margin: 425px 640px 0px 0px;
     position: absolute;
     font-family: Quicksand;
     font-style: normal;
@@ -280,7 +280,7 @@
  .keep-in-touch-read-more{
      width: 83px;
      height: 24px; 
-     margin: 550px 940px 0px 0px; 
+     margin: 550px 1040px 0px 0px; 
      position: absolute;   
      font-family: Quicksand;
      font-style: normal;
@@ -295,5 +295,5 @@
     position:absolute;
     width: 67px;
     height: 0px;
-    margin: 556px 760px 0px 0px;
+    margin: 556px 860px 0px 0px;
  }
