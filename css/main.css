@@ -6,8 +6,9 @@
 }
 
 #header{
+  height:1029px;
   width: 100%;
- 
+  position:relative;
   background: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
@@ -17,9 +18,9 @@
 
 
 .header-navigation-bar{
+  position:absolute;
+  top: 0;
   width: 100%;
-  padding-left: 5%;
-  padding-right: 7%;
   height: 100px;
   display: flex;
   flex-wrap: wrap;
@@ -48,9 +49,7 @@
 .header-menu{
   margin-left: 320px;
   margin-right: 50px;
-  width: 355px;
-  padding-bottom: 20px;
-  
+  width: 355px;  
 }
 
 @media only screen and (max-width: 700px) and (min-width: 500px) {
@@ -224,42 +223,13 @@ color: #929292;;
 }
 
 .header-img{
-  width: 804px;
-  height: 918px;
-  margin-right: 20%;
+  max-width: 804px;
+  margin-top: 150px;
+  bottom: 0;
   display: flex;
-  flex-direction:row;
   align-items: center;
-
-}
-
-
-.header-img-phone-1{
-  width: 259px;
-  height: 527px;
-  margin-left: 20%;
-
-  background: #FFEBEB;
-  
-}
-
-.header-img-phone-2{
-  width: 311.61px;
-  height: 634.05px;
   text-align: center;
-
-  background: #4D4D4D;
-  box-shadow: 0px 20px 32px 16px rgba(0, 50, 113, 0.06);
-  border-radius: 42px;
-}
-
-.header-img-phone-3{
-  width: 259px;
-  height: 527px;
-  text-align: center;
-
-  background: #FFFFFF;
-  border-radius: 42px;
+  margin-right: 7%;
 }
 
 #features {
