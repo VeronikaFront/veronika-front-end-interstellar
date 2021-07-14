@@ -5,6 +5,176 @@
     background: #FFFFFF;
 }
 
+#header{
+  width: 100%;
+  background: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-navigation-bar{
+  width: 100%;
+  padding-left: 0%;
+  
+  height: 100px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.header-logo{
+  width: 179px;
+  height: 100px;
+
+  background: #0F7BFF;
+  border-radius: 0px 0px 21.5px 21.5px;
+}
+
+.header-logo-text{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  padding-top:25px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.header-menu{
+  margin-left: 320px;
+  margin-right: 50px;
+  width: 355px;
+}
+
+.header-menu ul{
+  list-style: none;
+  padding-right: 0%;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+}
+
+.header-menu li{
+  display: inline;
+  padding-left: 5%;
+}
+
+.header-menu a{
+text-decoration: none;
+color: #929292;;
+}
+
+.header-navigation-bar-button{
+  width: 165px;
+  height: 50px;
+  
+  background: #0063DD;
+  border-radius: 25px;
+  
+}
+
+.header-navigation-bar-button-text{
+  
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 15px;
+
+  color: #FFFFFF;
+  
+}
+
+.header-block{
+  width: 655px;
+  height: 239px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 10% 10% 20%;
+}
+
+.header-block-title{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.header-block-text{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+
+  text-align: center;
+
+  color: #929292;
+}
+
+.header-block-buttons{
+  width: 362px;
+  
+  
+}
+
+.header-block-button-1{
+  width: 166px;
+  height: 50px;
+  border: 2px solid #0F7BFF;
+  box-sizing: border-box;
+  border-radius: 25px;
+  
+ 
+}
+
+.header-block-button-2{
+  width: 166px;
+  height: 50px;
+  border: 2px solid #0F7BFF;
+  box-sizing: border-box;
+  border-radius: 25px;
+  align-items: center;
+  background: #0F7BFF;
+  
+}
+  
+ .header-block-button-1-text{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 10px;
+  color: #0F7BFF;
+}
+
+.header-block-button-2-text{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 10px;
+  color: #ffff;
+}
+
 #features {
     position: relative;
     width: 100%;
