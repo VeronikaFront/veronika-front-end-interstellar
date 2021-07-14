@@ -126,32 +126,9 @@ color: #929292;;
 
 @media only screen and (max-width: 800px) {
   .header-block {
-    margin:50%;
+    margin:300px;
   }
 }
-
-@media only screen and (max-width: 500px) {
-  .header-block {
-    margin:70%;
-    padding-left: 15%;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .header-block {
-    margin:70%;
-    padding-left: 30%;
-  }
-}
-
-
-@media only screen and (max-width: 1000px) and (min-width: 800px) {
-  .header-block {
-    margin:20%;
-    padding-right: 5%;
-  }
-}
-
 
 .header-block-title{
   font-family: Quicksand;
