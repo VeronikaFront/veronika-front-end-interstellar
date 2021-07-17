@@ -1,12 +1,13 @@
 #homepage {
     position: relative;
     width: 100%;
-
     background: #FFFFFF;
+
+    
 }
 
 #header{
-  height:1029px;
+  min-height:1050px;
   width: 100%;
   position:relative;
   background: #FFFFFF;
@@ -17,6 +18,7 @@
   background: url(../vector.svg);
   background-repeat: no-repeat;
   background-position-x: center;
+
 }
 
 
@@ -136,12 +138,18 @@ button.header-navigation-bar-button {
   flex-wrap: wrap;
   justify-content: center;
   margin-top:200px;
-  
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 680px) {
   .header-block {
     margin:300px;
+  }
+}
+
+
+@media only screen and (min-width: 680px) and (max-width: 1000px) {
+  .header-block {
+    margin:200px;
   }
 }
 
@@ -278,6 +286,24 @@ button.header-block-button-2 {
   margin-top: -600px;
 }
 
+@media only screen and (max-width: 680px) {
+  .header-scroll-down {
+    margin-top:-1100px;
+  }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 1000px) {
+  .header-scroll-down {
+    margin-top:-800px;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .header-scroll-down {
+    margin-top:-550px;
+  }
+}
+
 .features-block {
     width: 332px;
     background: #ffffff;
@@ -323,86 +349,47 @@ button.header-block-button-2 {
   }
 
   #about{
-    position: relative;
     width: 100%;
-    height: 1308.58px;
-  
+    min-height: 1308.58px;
     display: flex;
     flex-wrap: wrap;
-    
+    gap: 50px;
 }
 
 .easy-messaging{
-    position:relative;
     width: 100%;
-    height: 655px;
     display: flex;
     flex-wrap: wrap;
  }
 
- .easy-messaging-img{
-  height:497.39px;
- }
-
- .easy-messaging-back-screen {
-  position: absolute;  
-  max-width: 609px;
-  margin-left: 100px;  
-  margin-top: -60px;   
- }
 
  .easy-messaging-screen {
-   position: absolute;
-   margin-top: 60px; 
+   margin-top: 60px;
    max-width: 558px;
    margin-left:150px;
-  
+   position: relative;
+   z-index: 1;
+   margin-bottom: 154px;
  }
 
- 
- @media only screen and (max-width: 350px){
-  .easy-messaging-back-screen {
-    bottom:400px;
-    left:100px;
-  }
-}
-
-@media only screen and (max-width: 400px) and (min-width: 350px) {
-  .easy-messaging-back-screen {
-    bottom:350px;
-    left:100px;
-  }
-}
-
- @media only screen and (max-width: 500px) and (min-width: 400px) {
-  .easy-messaging-back-screen {
-    bottom:300px;
-    left:100px;
-  }
-}
-
- @media only screen and (max-width: 600px) and (min-width: 500px) {
-  .easy-messaging-back-screen {
-    bottom:200px;
-  }
-}
-
-@media only screen and (max-width: 800px) and (min-width: 600px) {
-  .easy-messaging-back-screen {
-    bottom:140px;
-  }
+ .easy-messaging-screen::after{
+  content: '';
+  position: absolute;
+  background: url("../easy-messaging-back-screen.png");
+  top: -123px;
+  bottom: -156px;
+  right: 0;
+  left: -65px;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .easy-messaging-block{
-  position: relative;
-  
-  height: 373px;
-  margin-left: 800px;
-  margin-top: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+ max-width:604px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
 }
 
  .easy-messaging-title{
@@ -425,6 +412,7 @@ button.header-block-button-2 {
     font-size: 16px;
     line-height: 150%;
     padding-bottom: 25px;
+    padding-left: 75px;
     color: #000000;
  }
 
@@ -441,42 +429,39 @@ button.header-block-button-2 {
 
  .easy-messaging-read-more-arrow {
     margin-top: -20px;
-    padding-right:200px;
+    padding-right:180px;
  }
 
  .keep-in-touch{
-    position:relative;
     width: 100%;
-    height: 655px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
- }
- 
-.keep-in-touch-img {
-  height:620.49px;
-}
-
- .keep-in-touch-back-screen {
-   position: absolute;
-   max-width: 609px; 
-   right:100px; 
  }
 
  .keep-in-touch-screen {
-     position: absolute;
      max-width: 362px;
-     margin-top:30px;
-     right:280px;
-     
+     margin-top:60px;
+     margin-bottom: 116px;
+     margin-left: 45px;
+     margin-right: 180px;
+     z-index: 1;
+     position: relative;
  }
 
-.keep-in-touch-block{
-  position: relative;
-  
-  height: 373px;
-  margin-right: 700px;
-  margin-top: 80px;
+ .keep-in-touch-screen::after{
+  content: '';
+  position: absolute;
+  background: url("..//keep-in-touch-back-screen.png");
+  bottom: -150px;
+  left: -45px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: -40px;
+  right: -200px;
+ }
+
+  .keep-in-touch-block{
+  max-width: 604px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -489,19 +474,20 @@ button.header-block-button-2 {
      font-weight: 500;
      font-size: 32px;
      line-height: 40px;
-     padding-right: 245px;
+     padding-right: 240px;
      padding-bottom: 25px;
      color: #000000;
  }
 
  .keep-in-touch-text{
-
+    margin-left: 80px;
+    
     font-family: Quicksand;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
-    padding-bottom:25px;
+    margin-bottom:25px;
     /* or 24px */
     
     
@@ -527,7 +513,6 @@ button.header-block-button-2 {
  #how-does-it-works{
     position: relative;
     width: 100%;
-    margin-top: -100px;
     background: #F5FCFD;
     padding-bottom: 100px;
     padding-top: 100px;
@@ -617,11 +602,12 @@ button.header-block-button-2 {
  
 #rates{
   width: 100%;
-  height: 835px;
+  min-height: 835px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap:50px;
 }
 
 .pricing-plan-block{
@@ -739,8 +725,8 @@ button.pricing-plan-block-button-2 {
   flex-direction: column;
   align-items: center;
   padding: 40px 0px 0px 0px;
-  border-top: 2%;
-  margin: 100px 15px;
+  
+  
 
   
   box-shadow: 0px 4px 20px rgba(0, 78, 172, 0.08);
@@ -800,7 +786,7 @@ button.pricing-plan-block-button-2 {
   border: 2px solid #0F7BFF;
   box-sizing: border-box;
   border-radius: 25px;
-  color: #0F7BFF;
+  color: #FFFFFF;
   
   
 }
@@ -815,6 +801,12 @@ button.rates-block-button {
   border: 1px solid #006398;
   box-shadow: 2px 2px 20px #AFE9FF;
 }
+
+.premium .rates-block-button:hover {
+    color: #FFFFFF;
+    border: 1px solid #006398;
+    box-shadow: 2px 2px 20px #AFE9FF;
+  }
 
 .rates-block-button a{
   text-decoration: none;
@@ -835,15 +827,18 @@ button.rates-block-button {
   
   background: #0F7BFF;
   border-radius: 25px;
-  color: #FFFFFF;
+ color: #0F7BFF;
 }
 
 
 #latest-news{
   width: 100%;
-  height: 965px;
+  min-height: 965px;
   position: relative;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .latest-news-title{
@@ -878,13 +873,14 @@ button.rates-block-button {
 .latest-new-postis-post-1{
   width: 558px;
   height: 572px;
-  padding-left: 100px;
+  
 }
 
 .latest-new-postis-post-1-img{
   width: 571px;
   height: 381px;
   margin-bottom:-50px;
+  
 }
 
 .latest-new-postis-post-1-title{
@@ -928,8 +924,9 @@ button.rates-block-button {
 .latest-new-postis-post-2{
   width: 609px;
   height: 134px;
-  padding-left: 100px;
+  margin-bottom: 25px;
 }
+
 
 .latest-new-postis-post-2-img{
   width: 203px;
@@ -944,7 +941,7 @@ button.rates-block-button {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  margin-left: 190px;
+  margin-left: 220px;
   margin-top:-135px;
   width: 413px;
 }
@@ -966,7 +963,7 @@ button.rates-block-button {
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
-  margin-left: 192px;
+  margin-left: 222px;
   margin-top: 15px;
   width: 339px;
 }
@@ -1008,14 +1005,18 @@ button.rates-block-button {
 #free-trial{
   position: relative;
   width: 100%;
-  height: 335px;
+  min-height: 335px;
   background: #F5FCFD;
-  margin-top: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5FCFD;
 }
 
 .free-trial-block{
-  
-  height: 89px;
+  margin-right: 100px;
+  margin-left: 100px;
+  max-width: 336px;
 }
 
 .free-trial-title{
@@ -1025,8 +1026,6 @@ button.rates-block-button {
   font-size: 32px;
   line-height: 40px;
   color: #000000; 
-  padding-top: 110px;
-  padding-left: 270px;
 }
 
 .free-trial-text{
@@ -1035,7 +1034,6 @@ button.rates-block-button {
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
-  padding-left:275px;
   padding-top: 50px ;
 
   color: #000000;
@@ -1046,8 +1044,11 @@ button.rates-block-button {
   height: 50px;
   background: #0F7BFF;
   border-radius: 25px;
-  margin-left: 770px;
-  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  margin-right: 100px;
 }
 
 button.free-trial-button {
@@ -1071,23 +1072,26 @@ button.free-trial-button {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  padding-top: 15px;
-  padding-left: 70px;
+  text-align: center;
+  padding-right: 40px;
   color: #FFFFFF;
 }
 
 .free-trial-arrow{
   width: 30px;
   height: 0px;
-  margin-left: 170px;
+  margin-left: 100px;
   margin-top: -17px;
 }
 
 #pagination{
   width: 100%;
-  height: 360px;
-
+  min-height: 460px;
   background: #0F7BFF;
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  align-items: center;
 }
 
 .pagination-logo{
@@ -1096,27 +1100,27 @@ button.free-trial-button {
   font-weight: bold;
   font-size: 36px;
   line-height: 45px;
-  text-align: center;
   color: #FFFFFF;
   padding-top:100px;
 }
 
 .pagination-buttons{
-  width:558px;
+  max-width:558px;
   align-items: center;
   justify-content: center;
-  margin-left: 400px;
-  margin-top: 40px;
+  display: flex;
+  margin-top:40px;
 }
 
 .pagination-button-1{
-  width: 392px;
+  max-width: 392px;
   height: 50px;
   background: #0063DD;
-  border-radius: 25px;
+  border-radius: 25px 0 0 25px;
   text-align: center;
   padding-top: 10px;
-  left: 100px;
+  flex: 1 1 auto;
+  width: 100%;
 }
 
 button.pagination-button-1 {
@@ -1151,9 +1155,9 @@ button.pagination-button-1 {
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 0px 25px 25px 0px;
-  margin-left: 370px;
-  margin-top: -50px;
-  padding-top:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button.pagination-button-2 {
@@ -1184,7 +1188,7 @@ button.pagination-button-2 {
 
 #footer{
   position: absolute;
-  bottom:-100;
+  bottom:0;
   width: 100%;
   height: 125px;
   background: #0063DD;
